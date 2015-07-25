@@ -52,13 +52,15 @@ table {
 .block {
 	width: 25%;
 	float: left;
-	border: 1px solid #d3d3d3;
+	background: #f00;
+	border: 1px solid #ccc;
+	opacity: .05;
 	box-sizing: border-box;
+	transition: opacity 0.5s ease;
 }
 
 .block.active, .block:active{
-	background: #f00;
-	border: 1px solid #f00
+	opacity: 1;
 }
 
 .centent_block {
