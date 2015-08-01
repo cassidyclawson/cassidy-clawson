@@ -10,7 +10,8 @@ $(document).ready(function() {
   var windowHeight = $(window).height();
   var blockHeight = windowHeight / blocks;
   var currentBlock = 0;
-  var checkPoint = blockHeight;
+  var checkPoint1 = blockHeight * currentBlock;
+  var checkPoint2 = blockHeight;
 
   //Keep last block highlighted or not?
   if (lastBlockOn) { blocks--; }
@@ -36,24 +37,24 @@ $(document).ready(function() {
     /* Check if we have reached at top, and we have not already changed position
        Then change position of mainBlock to be fixed and add other settings */
     if (scrollPos == 0 && currentBlock > 0) {
-      if( $mainBlock.css('position').toLowerCase() == 'static') {
+      if( $mainBlock.css('position') == 'static') {
         $mainBlock.css({'position': 'fixed'});
         $('body').css({'padding-top': windowHeight * 2}).scrollTop(windowHeight);
       }
     }
 
     //Check scroll position, and activate blocks accordingly
-    if(scrollPos >= checkPoint && currentBlock < blocks) {
-      currentBlock++;
-      checkPoint = blockHeight * (currentBlock + 1);
+    if( $mainBlock.css('position') == 'fixed') {
+      if (scrollPos >= checkPoint2 && currentBlock < blocks) {
+        currentBlock++;
+      } else if(scrollPos <= checkPoint1 && currentBlock > 0) {
+        currentBlock--;
+      }
+      checkPoint1 = blockHeight * currentBlock;
+      checkPoint2 = blockHeight * (currentBlock + 1);
       $block.removeClass('active');
       $block.eq(currentBlock).addClass('active');
-    } /*else if(scrollPos <= checkPoint && currentBlock >= 0) {
-      currentBlock--;
-      checkPoint = blockHeight * (currentBlock + 1);
-      $block.removeClass('active');
-      $block.eq(currentBlock).addClass('active');
-    }*/
+    }
 
   });//end of scroll event function
 
