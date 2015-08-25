@@ -56,7 +56,7 @@ table {
 	border: 1px solid #ccc;
 	opacity: .05;
 	box-sizing: border-box;
-	transition: opacity 0.5s ease;
+	transition: opacity 1s ease;
 }
 
 .block.active, .block:active{

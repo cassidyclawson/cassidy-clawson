@@ -10,8 +10,6 @@ $(document).ready(function() {
   var windowHeight = $(window).height();
   var blockHeight = windowHeight / blocks;
   var currentBlock = 0;
-  var checkPoint1 = blockHeight * currentBlock;
-  var checkPoint2 = blockHeight;
 
   //Keep last block highlighted or not?
   if (lastBlockOn) { blocks--; }
@@ -45,16 +43,17 @@ $(document).ready(function() {
 
     //Check scroll position, and activate blocks accordingly
     if( $mainBlock.css('position') == 'fixed') {
-      if (scrollPos >= checkPoint2 && currentBlock < blocks) {
-        currentBlock++;
-      } else if(scrollPos <= checkPoint1 && currentBlock > 0) {
-        currentBlock--;
-      }
-      checkPoint1 = blockHeight * currentBlock;
-      checkPoint2 = blockHeight * (currentBlock + 1);
+      //Find which block should be active based on scroll position
+      currentBlock = parseInt(scrollPos / blockHeight);
+
+      //remove active class and add it to currentBlock
       $block.removeClass('active');
       $block.eq(currentBlock).addClass('active');
     }
+
+    console.log(scrollPos);
+    console.log($mainBlock.css('position'));
+
 
   });//end of scroll event function
 
