@@ -1,0 +1,27 @@
+.main-block {
+  width: 100%;
+  overflow: hidden;
+
+  .block {
+    float:left;
+    height: 600px;
+    padding: 100px 0px;
+  }
+
+  #about {
+    width: 25%;
+    background: $primary;
+  }
+
+  #design, #code {
+    width: 37%;
+  }
+
+  #design {
+    background: $secondary;
+  }
+
+  #code {
+    background: $tertiary;
+  }
+}
