@@ -4,8 +4,8 @@
 
   .block {
     float:left;
-    height: 700px;
-    padding: 10px 0px;
+    height: 600px;
+    padding: 75px 0px;
   }
 
   #about {
@@ -19,9 +19,81 @@
 
   #design {
     background: $secondary;
+
+    ul{
+
+      padding-top: 100px;
+      margin-left: 80px;
+
+      li {
+        color: #FF6258;
+        list-style: none;
+        text-align: left;
+        font-size: 22px;
+        letter-spacing: 1.1;
+
+        &.identity {
+          background: url(../images/design_icon_identity.svg) no-repeat;
+          background-size: 84px 77px;
+          margin-right: 21px;
+          height: 77px;
+          line-height: 77px;
+          padding-left: 100px;
+          margin-bottom: 40px;
+        }
+
+        &.experience {
+          background: url(../images/design_icon_experience.svg) no-repeat;
+          background-size: 85px 87px;
+          margin-right: 23px;
+          height: 87px;
+          line-height: 87px;
+          padding-left: 100px;
+          margin-bottom: 40px;
+        }
+
+        &.interface {
+          background: url(../images/design_icon_interface.svg) no-repeat;
+          background-size: 96px 112px;
+          margin-right: 18px;
+          height: 112px;
+          line-height: 112px;
+          padding-left: 100px;
+        }
+      }
+    }
   }
 
   #code {
     background: $tertiary;
+
+    .content {
+      padding: 90px 0px 0px 50px;
+      box-sizing: border-box;
+
+      span {
+        font-family: 'Fira Mono';
+        font-size: 18px;
+        line-height: 28px;
+        display: block;
+        text-align: left;
+
+        span {
+          display: inline;
+        }
+
+        &.red {
+          color: #F67A64;
+        }
+
+        &.orange {
+          color: #FDC080;
+        }
+
+        &.grey {
+          color: #8A939A;
+        }
+      }
+    }
   }
 }

@@ -12,3 +12,55 @@
     }
   }
 }
+
+
+header {
+  .mobile-box {
+    border: 2px solid #fff;
+    border-radius: 38px;
+    max-width: 293px;
+    height: 552px;
+    margin: auto;
+    position: relative;
+
+    .mobile-content {
+      border: 2px solid #fff;
+      margin: 45px 11px 65px;
+      height: 448px;
+      background: #fff;
+    }
+
+    .m-button {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      margin-left: -18px;
+    }
+
+    .m-speaker {
+      position: absolute;
+      width: 46px;
+      height: 2px;
+      border-radius: 2px;
+      background: #fff;
+      left: 50%;
+      margin-left: -21px;
+      top: 22px;
+    }
+
+    .m-camera {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 17px;
+      left: 50%;
+      margin-left: -42px;
+    }
+  }
+}
