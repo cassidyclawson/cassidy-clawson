@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
   //Configurable variables
-  var blocks = 4;                       //Total number of blocks
   var $mainBlock = $('.main-block');    //Wrapper element of all blocks
   var $block = $('.main-block .block'); //Blocks
+  var blocks = $block.length;         //Total number of blocks
   var lastBlockOn = true;               //Keep last block highlighted
 
   //Other variables used for functionality
