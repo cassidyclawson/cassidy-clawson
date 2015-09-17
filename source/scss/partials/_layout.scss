@@ -1,7 +1,56 @@
 body {
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans Book';
+  color: #414444;
 }
 
-footer {
-  background: $secondary;
+/* Typography */
+h1 {
+  font-family: 'League Spartan';
+  font-size: 60px;
+  color: #D0D5D9;
+  letter-spacing: 2.5px;
+  border-bottom: 1px solid #D0D5D9;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: 'League Spartan';
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: 0.55px;
+  line-height: 22px;
+  margin: 0px;
+}
+
+header {
+  margin-bottom: 80px;
+}
+
+.section-title {
+  overflow: hidden;
+  margin: 58px 0px 26px;
+
+  img {
+    float: left;
+    margin-right: 14px;
+  }
+
+  h2 {
+    margin: 15px 0px 0px;
+  }
+}
+
+.product {
+  padding: 60px 0px;
+  overflow: hidden;
+
+  &.first {
+    padding-top: 0px;
+    border-bottom: 1px solid #D0D5D9;
+  }
 }
