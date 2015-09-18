@@ -1,3 +1,70 @@
+@media (max-width: 1280px) {
+  .main-block {
+    .block {
+    padding: 10px 0px;
+    height: 500px;
+  }
+
+  #about, #design, #code {
+    width: 33%;
+  }
+
+  #design {
+    .content {
+      padding: 10%;
+      box-sizing: border-box;
+    }
+
+    ul{
+
+      padding-top: 30px;
+      margin-left: 20px;
+
+      li {
+        font-size: 18px;
+
+        &.identity {
+          background-size: 64px 57px;
+          margin-right: 1px;
+          height: 67px;
+          line-height: 67px;
+          padding-left: 80px;
+          margin-bottom: 30px;
+        }
+
+        &.experience {
+          background-size: 65px 67px;
+          margin-right: 3px;
+          height: 77px;
+          line-height: 77px;
+          padding-left: 80px;
+          margin-bottom: 30px;
+        }
+
+        &.interface {
+          background-size: 76px 92px;
+          margin-right: 0px;
+          height: 102px;
+          line-height: 102px;
+          padding-left: 80px;
+        }
+      }
+    }
+  }
+
+  #code {
+    .content {
+      padding: 10%;
+      box-sizing: border-box;
+      span {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  }
+}
+
 @media (max-width: 768px) {
   img {
     max-width: 100%;
