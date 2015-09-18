@@ -54,14 +54,26 @@ $(document).ready(function() {
     if( $mainBlock.css('position') == 'fixed') {
       //Find which block should be active based on scroll position
       currentBlock = parseInt(scrollPos / blockHeight);
-
+      // console.log("Scroll pos: " + scrollPos);
+      // console.log("Block height: " + blockHeight);
+      //
+      // var scrollRatio = (scrollPos / blockHeight);
+      // console.log(scrollRatio);
+      //
+      // if (scrollRatio < 0.2) {
+      //   currentBlock = 0;
+      // } else if (scrollRatio > 0.2 && scrollRatio < 0.6) {
+      //   currentBlock = 1;
+      // } else if (scrollRatio > 0.6) {
+      //   currentBlock = 2;
+      // }
       //remove active class and add it to currentBlock
       $block.removeClass('active');
       $block.eq(currentBlock).addClass('active');
     }
 
-    console.log(scrollPos);
-    console.log($mainBlock.css('position'));
+    // console.log(scrollPos);
+    // console.log($mainBlock.css('position'));
 
 
   });//end of scroll event function

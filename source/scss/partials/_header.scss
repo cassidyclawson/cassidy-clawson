@@ -7,8 +7,8 @@
     float:left;
     height: 600px;
     box-sizing: border-box;
-    opacity: 0.1;
-    transition: opacity 1s ease;
+    opacity: 0.15;
+    transition: opacity 0.3s ease;
     display: table;
 
     &.active {
@@ -35,7 +35,7 @@
 
     ul{
 
-      padding-top: 100px;
+      padding-top: 50px;
       margin-left: 80px;
 
       li {
@@ -47,31 +47,28 @@
 
         &.identity {
           background: url(../images/design_icon_identity.png) no-repeat;
-          background-size: 84px 77px;
-          margin-right: 21px;
-          height: 77px;
-          line-height: 77px;
-          padding-left: 100px;
+          background-size: 100px 100px;
+          height: 100px;
+          line-height: 100px;
+          padding-left: 120px;
           margin-bottom: 40px;
         }
 
         &.experience {
           background: url(../images/design_icon_experience.png) no-repeat;
-          background-size: 85px 87px;
-          margin-right: 23px;
-          height: 87px;
-          line-height: 87px;
-          padding-left: 100px;
+          background-size: 100px 100px;
+          height: 100px;
+          line-height: 100px;
+          padding-left: 120px;
           margin-bottom: 40px;
         }
 
         &.interface {
           background: url(../images/design_icon_interface.png) no-repeat;
-          background-size: 96px 112px;
-          margin-right: 18px;
-          height: 112px;
-          line-height: 112px;
-          padding-left: 100px;
+          background-size: 100px 100px;
+          height: 100px;
+          line-height: 100px;
+          padding-left: 120px;
         }
       }
     }
@@ -81,7 +78,7 @@
     background: $tertiary;
 
     .content {
-      padding: 90px 0px 0px 50px;
+      padding: 60px 0px 0px 50px;
       box-sizing: border-box;
 
       span {

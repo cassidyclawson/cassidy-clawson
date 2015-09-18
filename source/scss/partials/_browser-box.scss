@@ -15,6 +15,7 @@ $browserHeader: 40px;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
+  // max-width: 650px;
 
   .topbar {
     height: $browserHeader;
@@ -40,6 +41,7 @@ $browserHeader: 40px;
   }
 
   img {
+    width: 100%;
     display: block;
     margin: auto;
   }
