@@ -82,6 +82,11 @@
   }
 
   #design {
+    .content {
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     ul{
 
       padding-top: 30px;
