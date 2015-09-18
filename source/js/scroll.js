@@ -27,8 +27,10 @@ $(document).ready(function() {
     /* Check if we have scrolled equal to browser height,
        and then remove positioning to make page behave normally. */
     if (scrollPos >= windowHeight) {
-      $mainBlock.css({'position': 'static'});
-      $('body').css({'padding-top': '0px'}).scrollTop(0);
+      if( $mainBlock.css('position') == 'fixed') {
+        $mainBlock.css({'position': 'static'});
+        $('body').css({'padding-top': '0px'}).scrollTop(0);
+      }
     }
 
     // Reverse animation
