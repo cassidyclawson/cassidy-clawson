@@ -3,8 +3,9 @@ $(document).ready(function() {
   //Configurable variables
   var $mainBlock = $('.main-block');    //Wrapper element of all blocks
   var $block = $('.main-block .block'); //Blocks
-  var blocks = $block.length;         //Total number of blocks
-  //var lastBlockOn = true;               //Keep last block highlighted
+  var blocks = $block.length;           //Total number of blocks
+  //var lastBlockOn = true;             //Keep last block highlighted
+  var mobileBreakpoint = 800;           //Remove effect below this breakpoint
 
   //Other variables used for functionality
   var windowHeight = $(window).height();
@@ -15,13 +16,19 @@ $(document).ready(function() {
   //if (lastBlockOn) { blocks--; }
 
   //Initial Setup for height and positioning etc.
-  $mainBlock.css({'position': 'fixed'});
-  $block.height(windowHeight);
-  $('body').css({'padding-top': windowHeight * 2});
-  $block.first().addClass('active');
+  if ($(window).width() > mobileBreakpoint) {
+    $mainBlock.css({'position': 'fixed'});
+    $block.height(windowHeight);
+    $('body').css({'padding-top': windowHeight * 2});
+    $block.first().addClass('active');
+  }
 
   //Functionality on page scroll
   $(window).on("scroll", function() {
+    console.log($(window).width());
+    if ($(window).width() <= mobileBreakpoint) {
+      return;
+    }
     var scrollPos = $(this).scrollTop();
 
     /* Check if we have scrolled equal to browser height,

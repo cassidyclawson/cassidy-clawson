@@ -3,6 +3,12 @@ body {
   color: #414444;
 }
 
+p a {
+    color: #414444;
+    text-decoration: none;
+    border-bottom: 2px solid #FBB36D;
+}
+
 /* Typography */
 h1 {
   font-family: 'League Spartan';
@@ -48,9 +54,17 @@ header {
 .product {
   padding: 60px 0px;
   overflow: hidden;
+  border-bottom: 1px solid #D0D5D9;
 
   &.first {
     padding-top: 0px;
-    border-bottom: 1px solid #D0D5D9;
   }
+
+  &.last {
+    border-bottom: none;
+  }
+}
+
+article {
+  margin-bottom: 80px;
 }
