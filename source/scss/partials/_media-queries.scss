@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+  .mobile-box {
+    margin: 0 auto;
+  }
+
+  footer {
+    dd {
+      margin: 0px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    ul {
+      text-align: center;
+
+      li {
+          float: none;
+          display: inline-block;
+      }
+    }
+  }
+
+}

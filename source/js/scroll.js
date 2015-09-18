@@ -4,7 +4,7 @@ $(document).ready(function() {
   var $mainBlock = $('.main-block');    //Wrapper element of all blocks
   var $block = $('.main-block .block'); //Blocks
   var blocks = $block.length;         //Total number of blocks
-  var lastBlockOn = true;               //Keep last block highlighted
+  //var lastBlockOn = true;               //Keep last block highlighted
 
   //Other variables used for functionality
   var windowHeight = $(window).height();
@@ -12,7 +12,7 @@ $(document).ready(function() {
   var currentBlock = 0;
 
   //Keep last block highlighted or not?
-  if (lastBlockOn) { blocks--; }
+  //if (lastBlockOn) { blocks--; }
 
   //Initial Setup for height and positioning etc.
   $mainBlock.css({'position': 'fixed'});

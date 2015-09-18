@@ -1,11 +1,24 @@
 .main-block {
   width: 100%;
   overflow: hidden;
+  top: 0px;
 
   .block {
     float:left;
     height: 600px;
-    padding: 75px 0px;
+    box-sizing: border-box;
+    opacity: 0.1;
+    transition: opacity 1s ease;
+    display: table;
+
+    &.active {
+      opacity: 1;
+    }
+
+    .block-inner {
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
 
   #about {
