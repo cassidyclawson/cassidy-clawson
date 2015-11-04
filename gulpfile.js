@@ -37,6 +37,8 @@ var paths = {
 
 var jsSources = [
   'source/js/jquery-1.11.1.min.js',
+  'source/js/jquery-color.min.js',
+  'source/js/dropcap.min.js',
   'source/js/scroll.js'
 ]
 

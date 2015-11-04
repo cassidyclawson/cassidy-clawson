@@ -9,20 +9,25 @@ p a {
     border-bottom: 2px solid #FBB36D;
 }
 
+em {
+  color: #D0D5D9;
+  font-size: .8em;
+}
+
 /* Typography */
 h1 {
   font-family: 'League Spartan';
   font-size: 60px;
   color: #D0D5D9;
-  letter-spacing: 2.5px;
-  border-bottom: 1px solid #D0D5D9;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #D0D5D9;
   margin-bottom: 50px;
 }
 
 h2 {
   font-family: 'League Spartan';
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin: 0px;
 }
 
@@ -54,7 +59,7 @@ header {
 .product {
   padding: 60px 0px;
   overflow: hidden;
-  border-bottom: 1px solid #D0D5D9;
+  border-bottom: 2px solid #D0D5D9;
 
   &.first {
     padding-top: 0px;
@@ -67,4 +72,58 @@ header {
 
 article {
   margin-bottom: 80px;
+}
+
+.row {
+  margin-bottom:40px;
+}
+
+blockquote {
+  font-family: 'Fira Mono';
+  font-size: .9em;
+}
+
+.full-width {
+  padding: 1.2em 0em .5em 0em;
+  margin: 4em 8% 6em 8%;
+}
+.half-width {
+  padding: 3em 0em .5em 0em;
+  margin: 3em 0em;
+  span.author {
+    text-align: left;
+  }
+}
+
+.top-border {
+  border-top: 2px solid #D0D5D9;
+}
+.bottom-border {
+  border-bottom: 2px solid #D0D5D9;
+}
+
+.dropquote {
+  color: #D0D5D9;
+  font-family: 'icomoon';
+  margin: 0.6em 0.2em 0em 0.05em;
+}
+.dropquote-sm {
+  color: #D0D5D9;
+  font-family: 'icomoon';
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.author {
+  display: block;
+  text-align: right;
+  font-family: 'Fira Sans';
+  a {
+    color: #D0D5D9;
+    text-decoration: none;
+    border-bottom: 2px solid #FDB467;
+  }
+  a:hover {
+    color: #FDB467;
+  }
 }
